@@ -1,0 +1,32 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Build Rmd files under static/ for a blogdown website"
+theme = "hugo-xmin"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+[[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+
+[params]
+    description = "A minimal example of building Rmd files under the static/ directory of a website based on blogdown and Hugo."
+    footer = "&copy; [Yihui Xie](https://yihui.name) 2017 | [Github](https://github.com/yihui/blogdown-static) | [Twitter](https://twitter.com/xieyihui)"
